@@ -34,5 +34,12 @@ module junitTestCases {
 						Assert.assertTrue(result);
 					}
 	}
-			
+	@Parameterized.Parameters
+			public static List<String> data(){
+				return Arrays.asList( 'abc@yahoo.com', 'abc-100@yahoo.com','abc123@gmail.com');
+				@Test
+				public void testEmailList() {
+					Assertion.assertFalse(regexUserRegistration.validatePattern(testEmail))
+				}
+				}		
 }
